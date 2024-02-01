@@ -35,9 +35,8 @@ export const getPost = async (slug) => {
     throw new Error("Failed to fetch post!");
   }
 };
-
 export const getUser = async (id) => {
-  noStore();
+ 
   try {
     connectToDb();
     const user = await User.findById(id);
@@ -47,7 +46,6 @@ export const getUser = async (id) => {
     throw new Error("Failed to fetch user!");
   }
 };
-
 export const getUsers = async () => {
   try {
     connectToDb();
