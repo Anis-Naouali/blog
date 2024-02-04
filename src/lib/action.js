@@ -53,3 +53,15 @@ export const updatePost = async (formData) => {
     return { error: "Failed to update post" };
   }
 };
+
+
+// export const getPosts = async () => {
+//   try {
+//     connectToDb();
+//     const posts = await Post.find();
+//     return posts
+//   } catch (error) {
+//     console.log(error);
+//     return { error: "Failed to fetch posts" };
+//   }
+// };

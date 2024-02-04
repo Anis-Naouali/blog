@@ -1,4 +1,4 @@
-import { addPost, deletePost, sayHello, updatePost } from "@/lib/action";
+import { addPost, deletePost, getPosts, updatePost } from "@/lib/action";
 
 const ServerActionTestPage = () => {
   //   const actionInComponent = async () => {

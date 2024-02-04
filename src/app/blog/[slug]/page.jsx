@@ -1,13 +1,24 @@
+
 import Image from "next/image";
 import styles from "./singlePost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import { getPost } from "@/lib/data";
 // Fetch data from an API
-// const getData = async (slug) => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`);
+const getData = async (slug) => {
+  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+};
+// DELETE DATA
+// const deleteData = async (slug) => {
+//   const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
+//     method: "DELETE",
+//   });
 //   if (!res.ok) {
-//     throw new Error("Failed to fetch data");
+//     throw new Error("Failed to delete data");
 //   }
 //   return res.json();
 // };
@@ -15,10 +26,10 @@ import { getPost } from "@/lib/data";
 const SinglePostPage = async ({ params }) => {
   const { slug } = params;
 
-  // const post = await getData(slug);
+  const post = await getData(slug);
 
   // Fetch data without an API
-  const post = await getPost(slug);
+  // const post = await getPost(slug);
   return (
     <div className={styles.container}>
       {post.img && (
