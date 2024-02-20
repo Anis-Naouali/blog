@@ -6,22 +6,19 @@ export const metadata = {
   description: "About description",
 };
 
-
 const AboutPage = () => {
-
   // console.log("lets check where it works")
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h2 className={styles.subtitle}>About Agency</h2>
+        <h2 className={styles.subtitle}>Lorem ipsum dolor sit</h2>
         <h1 className={styles.title}>
-          We create digital ideas that are bigger, bolder, braver and better.
-        </h1>
+        Quisque vel nulla sit amet nunc posuere eleifend ut non arcu.         </h1>
         <p className={styles.desc}>
-          We create digital ideas that are bigger, bolder, braver and better. We
-          believe in good ideas flexibility and precission We’re world’s Our
-          Special Team best consulting & finance solution provider. Wide range
-          of web and software development services. 
+          Integer consectetur est et nisi tempus, in suscipit justo congue.
+          Suspendisse potenti. Fusce ac urna vel neque tincidunt cursus eget vel
+          libero. Sed vitae elit vitae ligula cursus malesuada. Mauris eu odio
+          eu nisl finibus accumsan.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
@@ -39,12 +36,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image
-          src="/about.png"
-          alt="About Image"
-          fill
-          className={styles.img}
-        />
+        <Image src="/about.png" alt="About Image" fill className={styles.img} />
       </div>
     </div>
   );

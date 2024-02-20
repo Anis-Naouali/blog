@@ -19,7 +19,6 @@ const PostUser = async ({ userId }) => {
 
   // FETCH DATA WITHOUT AN API
   const user = await getUser(userId);
-
   return (
     <div className={styles.container}>
       <Image
