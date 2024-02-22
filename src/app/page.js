@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Anis Naouali</h1>
         <p className={styles.desc}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel libero pharetra viverra.        </p>
+        Lorem ipsum dolor sit amet, consectetur fefe adipiscing elit. Nullam non urna vel libero pharetra viverra.        </p>
         <div className={styles.buttons}>
           <button className={styles.button}>Learn More</button>
           <button className={styles.button}>Contact</button>
